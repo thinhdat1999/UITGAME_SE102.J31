@@ -4,18 +4,21 @@ Player* Player::_instance = NULL;
 Player::Player()
 {
 	animations[STANDING] = new Animation(PLAYER, 0);
-	animations[RUNNING] = new Animation(PLAYER, 1, 4, DEFAULT_TPF >> 1);
+	animations[RUNNING] = new Animation(PLAYER, 1, 4, DEFAULT_TPF);
 	animations[SHIELD_UP] = new Animation(PLAYER, 5);
 	animations[SITTING] = new Animation(PLAYER, 6);
 	animations[JUMPING] = new Animation(PLAYER, 7);
 	animations[FALLING] = new Animation(PLAYER, 7);
 	animations[SPINNING] = new Animation(PLAYER, 8, 9, DEFAULT_TPF >> 1);
-	animations[THROWING] = new Animation(PLAYER, 10, 11, DEFAULT_TPF >> 1);
-	animations[ATTACKING_STAND] = new Animation(PLAYER, 12, 13, DEFAULT_TPF);
-	animations[ATTACKING_SIT] = new Animation(PLAYER, 14, 15, DEFAULT_TPF);
-	animations[DASHING] = new Animation(PLAYER, 16, 17, DEFAULT_TPF);
-	animations[SHIELD_DOWN] = new Animation(PLAYER, 18);
+	animations[ATTACKING_JUMP] = new Animation(PLAYER, 10);
+	animations[THROWING] = new Animation(PLAYER, 11, 12, DEFAULT_TPF );
+	animations[ATTACKING_STAND] = new Animation(PLAYER, 13, 14, DEFAULT_TPF);
+	animations[ATTACKING_SIT] = new Animation(PLAYER, 15, 16, DEFAULT_TPF);
+	animations[DASHING] = new Animation(PLAYER, 17, 18, DEFAULT_TPF);
+	animations[SHIELD_DOWN] = new Animation(PLAYER, 19);
 	tag = PLAYER;
+	width = PLAYER_WIDTH;
+	height = PLAYER_STANDING_HEIGHT;
 }
 
 // Destructor
@@ -41,7 +44,7 @@ void Player::Respawn()
 {
 
 	this->_allow[JUMPING] = true;
-	this->_allow[ATTACKING] = true;
+	this->_allow[ATTACKING] = false;
 	this->_allow[RUNNING] = true;
 	this->_allow[THROWING] = true;
 	this->isAttacking = false;
@@ -86,6 +89,22 @@ void Player::Render(float cameraX, float cameraY)
 void Player::OnKeyDown(int keyCode)
 {
 	switch (keyCode) {
+	case DIK_Z:
+		if (_allow[THROWING] && weaponType == SHIELD 
+			&& this->stateName != ATTACKING_SIT && this->stateName != ATTACKING_STAND 
+			&& this->stateName != ATTACKING_JUMP) {
+			_allow[THROWING] = false;
+			_allow[ATTACKING] = true;
+			this->isThrowing = true;
+			ChangeState(new PlayerAttackingState());
+		}
+		else if (_allow[ATTACKING])
+			{
+			_allow[ATTACKING] = false;
+			ChangeState(new PlayerAttackingState());
+			this->isAttacking = true;
+			}
+		break;
 	case DIK_SPACE:
 		if (_allow[JUMPING])
 		{

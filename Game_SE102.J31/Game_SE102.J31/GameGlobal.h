@@ -24,11 +24,20 @@ extern std::unordered_map<int, bool> keyCode;
 #define player Player::GetInstance()
 
 
-
+// ===== Thông số cho Weapon ======
+#define WEAPON_SHIELD_SPEED 0.25f
+#define WEAPON_SHIELD_MAX_DISTANCEX 3.0f
+#define WEAPON_SHIELD_REVERSE_ACCELERATEX 0.02f
+#define WEAPON_SHIELD_REVERSE_DISTANCEY 0.4f
+#define WEAPON_SHIELD_WIDTH 15
+#define WEAPON_SHIELD_HEIGHT 15
 // ===== Thông số Captain =====
 #define PLAYER_RUNNING_SPEED 0.095f
 #define PLAYER_JUMPING_SPEED 0.28f
 #define PLAYER_FALLING_SPEED 0.25f
+#define PLAYER_WIDTH 20
+#define PLAYER_STANDING_HEIGHT 26
+#define PLAYER_SITTING_HEIGHT 18
 #define GRAVITY_SPEED 0.014f	
 // ====== ENUM của Object  ======
 extern enum Tag

@@ -104,6 +104,9 @@
     <ClInclude Include="PlayerShieldUpState.h">
       <Filter>Framework\Game Entity\PlayerState</Filter>
     </ClInclude>
+    <ClInclude Include="PlayerAttackingState.h">
+      <Filter>Framework\Game Entity\PlayerState</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameGlobal.cpp">
@@ -161,6 +164,9 @@
       <Filter>Framework\Game Entity\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="PlayerShieldUpState.cpp">
+      <Filter>Framework\Game Entity\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAttackingState.cpp">
       <Filter>Framework\Game Entity\PlayerState</Filter>
     </ClCompile>
   </ItemGroup>

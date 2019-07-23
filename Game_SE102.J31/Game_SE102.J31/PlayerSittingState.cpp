@@ -4,6 +4,8 @@
 PlayerSittingState::PlayerSittingState()
 {
 	player->_allow[JUMPING] = false;
+	player->_allow[THROWING] = false;
+	player->_allow[ATTACKING] = true;
 	player->vx = 0;
 	player->vy = 0;
 	player->posY -= 8;

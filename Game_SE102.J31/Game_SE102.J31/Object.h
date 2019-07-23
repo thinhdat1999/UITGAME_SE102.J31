@@ -21,10 +21,10 @@ public:
 	bool isReverse;								// Kiểm tra lật hình theo chiều ngang
 	bool isDead;
 
-	//Rect GetRect();
+	Rect GetRect();
 	//BoundingBox GetBoundingBox();
 
 	void Update(float dt);
-	//bool IsCollide(Rect r);
+	bool IsCollide(Rect r);
 	virtual void Render(float cameraX, float cameraY) {}
 };

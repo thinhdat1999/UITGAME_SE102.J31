@@ -7,6 +7,7 @@ PlayerJumpingState::PlayerJumpingState()
 	_reverse = player->isReverse;
 	player->_allow[ATTACKING] = true;
 	player->_allow[CLINGING] = true;
+	player->_allow[THROWING] = false;
 
 	State prevState = player->state->StateName;
 

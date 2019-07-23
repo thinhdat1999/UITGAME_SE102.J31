@@ -16,7 +16,7 @@ PlayScene::PlayScene()
 	weapon->posX = p->posX + (p->isReverse ? 5 : -5);
 	weapon->posY = p->posY + 5;
 	weapon->isReverse = p->isReverse;
-	if (p->isReverse) weapon->vx = -weapon->vx;
+	if (!p->isReverse) weapon->vx = -weapon->vx;
 
 	mCamera->x = 0;
 	mCamera->y = p->posY + (mCamera->height >> 1);
@@ -43,6 +43,7 @@ void PlayScene::Update(float dt)
 	//scoreboard->Update(dt);
 
 	/*UpdateObject(dt);*/
+	
 	UpdatePlayer(dt);
 
 }
@@ -107,10 +108,22 @@ void PlayScene::Update(float dt)
 */
 void PlayScene::UpdatePlayer(float dt)
 {
+	
 	player->Update(dt);
-	weapon->Update(dt);
 	player->posX += player->vx * dt;
 	player->posY += player->vy * dt;
+	
+	if (p->isAttacking) {
+		p->isAttacking = false;
+	}
+	else if (p->isThrowing) {
+		weapon->isHolding = false;
+		weapon->vx = 0.6f;
+		player->isThrowing = false;
+		player->_allow[THROWING] = false;
+		if (!p->isReverse) weapon->vx = -weapon->vx;
+	}
+	weapon->Update(dt);
 }
 
 // Tải Scene lên màn hình bằng cách vẽ các Sprite trong Scene

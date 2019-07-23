@@ -9,20 +9,17 @@ protected:
 	unordered_map<State, Animation*> animations;
 	Animation *curAnimation;
 	State stateName;
-	bool isOut;
 public:
+	bool isOut, isHolding;
+
 	Weapon()
 	{
 		tag = WEAPON;
-		if (player->isThrowing)
-		{
-			player->_allow[THROWING] = false;
-		}
 	}
 
 	~Weapon()
 	{
-		if (type != SHIELD)
+		if (type == SHIELD)
 		{
 			player->_allow[THROWING] = true;
 		}
@@ -46,45 +43,37 @@ public:
 
 	virtual void Update(float dt)
 	{
-		this->UpdateDistance(dt);
-		if (player->isThrowing) {
+		UpdateDistance(dt);
+		if (isOut)
+		{
+			stateName = SHIELD_UP;
 			this->posX += dx;
 			this->posY += dy;
 		}
-		else
-		{
+		else {
 			this->posX = player->posX;
 			this->posY = player->posY;
-		}
-		if (!isOut) {
 			switch (player->stateName) {
-			case SHIELD_UP: case ATTACKING:
+			case SHIELD_UP:
 				stateName = SHIELD_UP;
+				this->posY += 16;
+				this->posX += (player->isReverse ? 2 : -2);
 				break;
 			case SHIELD_DOWN:
 				stateName = SHIELD_DOWN;
 				break;
-			// player->isOnGround == false -> JUMPING
+				// player->isOnGround == false -> JUMPING
 			case JUMPING: case FALLING:
 				stateName = JUMPING;
-
+				this->posY = player->posY + 10;
+				this->posX += (player->isReverse ? -5 : 5);
 				break;
-			default: 
+			default:
 				stateName = STANDING;
-				if (player->stateName != SITTING)
-				{
-					this->posX = player->posX;
-					this->posY = player->posY + 8;
-				}
-				else {
-					this->posX = player->posX;
-					this->posY = player->posY - 2;
-				}
+				this->posY += (player->stateName != SITTING) ? 6 : -3;
+				this->posX += (player->isReverse ? 11 : -11);
 				break;
 			}
-		}
-		else {
-			stateName = SHIELD_UP;
 		}
 	
 		

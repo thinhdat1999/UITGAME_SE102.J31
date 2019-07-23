@@ -5,6 +5,7 @@
 #include "PlayerStandingState.h"
 #include "PlayerJumpingState.h"
 #include "PlayerShieldUpState.h"
+#include "PlayerAttackingState.h"
 
 class Player : public Object
 {
