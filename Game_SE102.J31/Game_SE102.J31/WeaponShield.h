@@ -48,7 +48,7 @@ public:
 					else this->dy -= WEAPON_SHIELD_REVERSE_DISTANCEY;*/
 		}
 		// Nếu player đang ném vũ khí:
-		if (this->GetRect().isContain(player->GetRect()) && !isHolding)
+		if (this->GetRect().isContain(player->GetRect()) && !player->isHoldingShield)
 		{
 			if (!isOut)
 			{
@@ -58,6 +58,7 @@ public:
 			else
 			{
 				this->isOut = false;
+				player->isHoldingShield = true;
 				this->isHolding = true;
 				player->_allow[THROWING] = true;
 				this->isDead = true;

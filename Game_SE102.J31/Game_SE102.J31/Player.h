@@ -24,7 +24,7 @@ public:
 	Animation* curAnimation;								// Animation hiện tại
 	Type weaponType;
 	unordered_map<State, bool> _allow;
-	bool isThrowing, isAttacking;
+	bool isThrowing, isAttacking, isHoldingShield;
 
 	void Respawn();
 	void ChangeState(PlayerState* newState);

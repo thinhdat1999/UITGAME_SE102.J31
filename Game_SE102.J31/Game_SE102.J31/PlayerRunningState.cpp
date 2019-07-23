@@ -3,10 +3,10 @@
 // Khởi tạo RUNNING với tốc độ chạy cho trước
 PlayerRunningState::PlayerRunningState()
 {
-	player->_allow[ATTACKING] = false;
 	player->_allow[JUMPING] = true;
-	player->_allow[THROWING] = true;
 	player->vy = 0;
+	if (player->isHoldingShield)
+		player->_allow[THROWING] = true;
 	StateName = RUNNING;
 }
 

@@ -47,6 +47,7 @@ void Player::Respawn()
 	this->_allow[ATTACKING] = false;
 	this->_allow[RUNNING] = true;
 	this->_allow[THROWING] = true;
+	this->isHoldingShield = true;
 	this->isAttacking = false;
 	this->isThrowing = false;
 	this->vx = this->vy = this->dx = this->dy = 0;
@@ -90,7 +91,7 @@ void Player::OnKeyDown(int keyCode)
 {
 	switch (keyCode) {
 	case DIK_Z:
-		if (_allow[THROWING] && weaponType == SHIELD 
+		if (_allow[THROWING] && weaponType == SHIELD && isHoldingShield
 			&& this->stateName != ATTACKING_SIT && this->stateName != ATTACKING_STAND 
 			&& this->stateName != ATTACKING_JUMP) {
 			_allow[THROWING] = false;

@@ -6,7 +6,7 @@ PlayerAttackingState::PlayerAttackingState()
 	_curState = player->state->StateName;
 	_reverse = player->isReverse;
 	switch (_curState) {
-	case SITTING: 
+	case SITTING:
 		StateName = ATTACKING_SIT;
 		break;
 	case JUMPING: case FALLING: case SHIELD_DOWN:
@@ -14,7 +14,10 @@ PlayerAttackingState::PlayerAttackingState()
 		break;
 	case STANDING: case RUNNING: case SHIELD_UP:
 		if (player->isThrowing)
+		{
 			StateName = THROWING;
+			player->isHoldingShield = false;
+		}
 		else
 			StateName = ATTACKING_STAND;
 		break;
