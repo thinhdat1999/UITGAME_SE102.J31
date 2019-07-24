@@ -26,9 +26,8 @@ extern std::unordered_map<int, bool> keyCode;
 
 // ===== Thông số cho Weapon ======
 #define WEAPON_SHIELD_SPEED 0.25f
-#define WEAPON_SHIELD_MAX_DISTANCEX 3.0f
+#define WEAPON_SHIELD_MAX_DISTANCEX 4.5f
 #define WEAPON_SHIELD_REVERSE_ACCELERATEX 0.02f
-#define WEAPON_SHIELD_REVERSE_DISTANCEY 0.4f
 #define WEAPON_SHIELD_WIDTH 15
 #define WEAPON_SHIELD_HEIGHT 15
 // ===== Thông số Captain =====

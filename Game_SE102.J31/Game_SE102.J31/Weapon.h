@@ -10,7 +10,7 @@ protected:
 	Animation *curAnimation;
 	State stateName;
 public:
-	bool isOut, isHolding;
+	bool isOut, isBack;
 
 	Weapon()
 	{
@@ -48,7 +48,12 @@ public:
 		{
 			stateName = SHIELD_UP;
 			this->posX += dx;
-			this->posY += dy;
+			//if (!isBack) {
+			//	this->posY = player->posY + 6;
+			//}
+			//else
+			//	this->posY += dy;
+			if (isBack) this->posY += dy;
 		}
 		else {
 			this->posX = player->posX;

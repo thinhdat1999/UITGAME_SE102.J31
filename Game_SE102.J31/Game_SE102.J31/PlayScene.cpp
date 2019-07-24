@@ -117,7 +117,6 @@ void PlayScene::UpdatePlayer(float dt)
 		p->isAttacking = false;
 	}
 	else if (p->isThrowing) {
-		weapon->isHolding = false;
 		weapon->vx = 0.6f;
 		player->isThrowing = false;
 		player->_allow[THROWING] = false;
