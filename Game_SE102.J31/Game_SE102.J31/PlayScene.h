@@ -1,9 +1,11 @@
 ﻿#pragma once
 #include "Scene.h"
 #include "Player.h"
+#include "Enemy.h"
 #include "SceneManager.h"
 #include "WeaponShield.h"
 #include "GameMap.h"
+
 class PlayScene : public Scene
 {
 private:
@@ -11,6 +13,7 @@ private:
 	GameMap *mMap;
 	int MapWidth, MapHeight;
 	Player *p;
+	Enemy *enemy;
 	Weapon *weapon;
 	// Counter nhằm Update Scene sau một khoảng thời gian
 public:

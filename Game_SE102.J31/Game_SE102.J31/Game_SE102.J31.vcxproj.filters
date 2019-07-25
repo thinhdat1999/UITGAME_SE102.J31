@@ -27,7 +27,16 @@
     <Filter Include="Framework\Collision">
       <UniqueIdentifier>{abe51413-a3b6-43fc-80aa-f2d652859e4a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\Game Entity\PlayerState">
+    <Filter Include="Framework\Game Entity\Enemy">
+      <UniqueIdentifier>{763db770-20a9-45f6-b5e1-321fa86649da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Game Entity\Sprite">
+      <UniqueIdentifier>{ed5f2347-19b4-4d88-acd7-aaa29f876e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Game Entity\Player">
+      <UniqueIdentifier>{8e42dc82-9afd-4ea0-aeda-9fc5fe2f9566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Game Entity\Player\PlayerState">
       <UniqueIdentifier>{618f4024-fa0b-4059-83f6-1e6f73569caf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -65,47 +74,59 @@
     <ClInclude Include="PlayScene.h">
       <Filter>Framework\Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Framework\Game Entity</Filter>
-    </ClInclude>
     <ClInclude Include="PlayerState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerStandingState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerSittingState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
-    </ClInclude>
-    <ClInclude Include="Weapon.h">
-      <Filter>Framework\Game Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="WeaponSprite.h">
-      <Filter>Framework\Game Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="WeaponShield.h">
-      <Filter>Framework\Game Entity</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="GameMap.h">
       <Filter>Framework\Game</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerSprite.h">
-      <Filter>Framework\Game Entity</Filter>
-    </ClInclude>
     <ClInclude Include="PlayerRunningState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerJumpingState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerFallingState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerShieldUpState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="PlayerAttackingState.h">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2Sprite.h">
+      <Filter>Framework\Game Entity\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1Sprite.h">
+      <Filter>Framework\Game Entity\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSprite.h">
+      <Filter>Framework\Game Entity\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponSprite.h">
+      <Filter>Framework\Game Entity\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponShield.h">
+      <Filter>Framework\Game Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Framework\Game Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Framework\Game Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Framework\Game Entity\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBlueSoldier.h">
+      <Filter>Framework\Game Entity\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -140,34 +161,43 @@
       <Filter>Framework\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="PlayerStandingState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>Framework\Game Entity</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Framework\Game Entity</Filter>
-    </ClCompile>
     <ClCompile Include="PlayerSittingState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="GameMap.cpp">
       <Filter>Framework\Game</Filter>
     </ClCompile>
     <ClCompile Include="PlayerRunningState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="PlayerJumpingState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="PlayerFallingState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="PlayerShieldUpState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
     </ClCompile>
     <ClCompile Include="PlayerAttackingState.cpp">
-      <Filter>Framework\Game Entity\PlayerState</Filter>
+      <Filter>Framework\Game Entity\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySprite.h">
+      <Filter>Framework\Game Entity\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Framework\Game Entity\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Framework\Game Entity\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBlueSoldier.cpp">
+      <Filter>Framework\Game Entity\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -3,6 +3,10 @@
 #include "Sprite.h"
 #include "PlayerSprite.h"
 #include "WeaponSprite.h"
+#include "Boss1Sprite.h"
+#include "Boss2Sprite.h"
+#include "EnemySprite.h"
+
 class SpriteManager : CSprite
 {
 private:

@@ -42,7 +42,6 @@ Player* Player::GetInstance()
 
 void Player::Respawn()
 {
-
 	this->_allow[JUMPING] = true;
 	this->_allow[ATTACKING] = false;
 	this->_allow[RUNNING] = true;

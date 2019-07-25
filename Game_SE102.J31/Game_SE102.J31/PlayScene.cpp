@@ -1,4 +1,5 @@
 ﻿#include "PlayScene.h"
+#include "EnemyBlueSoldier.h"
 
 PlayScene::PlayScene()
 {
@@ -11,6 +12,8 @@ PlayScene::PlayScene()
 	p->posX = p->spawnX = 50;
 	p->posY = p->spawnY = 70;
 	p->Respawn();
+
+	enemy = new EnemyBlueSoldier(300, 70);
 
 	weapon = new WeaponShield();
 	weapon->posX = p->posX + (p->isReverse ? 5 : -5);
@@ -42,7 +45,7 @@ void PlayScene::Update(float dt)
 
 	//scoreboard->Update(dt);
 
-	/*UpdateObject(dt);*/
+	//UpdateObject(dt);
 	
 	UpdatePlayer(dt);
 
@@ -108,7 +111,7 @@ void PlayScene::Update(float dt)
 */
 void PlayScene::UpdatePlayer(float dt)
 {
-	
+	enemy->Update(dt);
 	player->Update(dt);
 	player->posX += player->vx * dt;
 	player->posY += player->vy * dt;
@@ -134,6 +137,7 @@ void PlayScene::Render()
 	//for (auto o : visibleObjects)
 	//	o->Render(mCamera->GetPositionX(), mCamera->GetPositionY());
 	player->Render(mCamera->x, mCamera->y);
+	enemy->Render(mCamera->x, mCamera->y);
 	weapon->Render(mCamera->x, mCamera->y);
 
 }

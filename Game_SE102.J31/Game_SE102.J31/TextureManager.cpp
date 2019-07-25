@@ -5,6 +5,9 @@ void TextureManager::StartUp()
 	TextureManager * textures = TextureManager::GetInstance();
 	textures->AddTexture(PLAYER, "Captain.png", D3DCOLOR_XRGB(0, 166, 81));
 	textures->AddTexture(MAP1, "Resource/CharlestonTiles.png", D3DCOLOR_XRGB(0, 0, 0));
+	textures->AddTexture(BOSS1, "Resource/NES - Captain America and the Avengers - Wizard.png", D3DCOLOR_XRGB(0, 166, 81));
+	textures->AddTexture(ENEMY, "Resource/NES - Captain America and the Avengers - Enemies.png", D3DCOLOR_XRGB(0, 91, 127));
+	textures->AddTexture(BOSS2, "Resource/NES - Captain America and the Avengers - Mini - Bosses.png", D3DCOLOR_XRGB(0, 91, 127));
 }
 
 void TextureManager::AddTexture(Tag tag, LPCSTR filePath, D3DCOLOR transparentColor)

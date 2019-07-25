@@ -51,6 +51,8 @@ extern enum Tag
 	MAP2,
 	MAP3,
 	FONT,
+	BOSS1,
+	BOSS2,
 	ENEMY,
 	HOLDER,
 	BULLET,
@@ -71,6 +73,7 @@ extern enum Type
 
 extern enum State
 {
+	IDLE,
 	STANDING,
 	RUNNING,
 	SHIELD_UP,
@@ -79,6 +82,9 @@ extern enum State
 	JUMPING,
 	SPINNING,
 	FALLING,
+	FLYING,
+	FLYING_ATK,
+	FLYING_DOWN,
 	SITTING,
 	ATTACKING,
 	ATTACKING_JUMP,
@@ -87,6 +93,8 @@ extern enum State
 	THROWING,
 	CLINGING,
 	ACTIVE,
+	TRANSFORM,
+	EXPLODE,
 	DEAD,
 	INJURED
 };
