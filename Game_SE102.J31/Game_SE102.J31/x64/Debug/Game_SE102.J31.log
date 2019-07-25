@@ -1,32 +1,29 @@
-﻿  Enemy.cpp
+﻿  Game.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(63): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(72): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(100): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\playersprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\weaponsprite.h(16): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\boss1sprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\boss2sprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\enemysprite.h(15): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-  EnemyBlueSoldier.cpp
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(61): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(70): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(92): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\playersprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponsprite.h(16): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponshield.h(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\game.cpp(114): warning C4244: 'initializing': conversion from 'unsigned long' to 'float', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\game.cpp(125): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\game.cpp(172): warning C4244: 'argument': conversion from 'WPARAM' to 'int', possible loss of data
+  PlayScene.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(63): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(72): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(100): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\playersprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\weaponsprite.h(16): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\boss1sprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\boss2sprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\enemysprite.h(15): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
-  EnemySprite.h
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(61): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(70): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(92): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\playersprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponsprite.h(16): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponshield.h(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  WinMain.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(63): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(72): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\gameglobal.h(100): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
-e:\bai tap\nam 2\gameeee\new folder\load bitmap\load bitmap\debug\load bitmap.tlog\uitgame_se102.j312\game_se102.j31\game_se102.j31\enemysprite.h(15): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(61): warning C4091: 'extern ': ignored on left of 'Tag' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(70): warning C4091: 'extern ': ignored on left of 'Type' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\gameglobal.h(92): warning C4091: 'extern ': ignored on left of 'State' when no variable is declared
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\playersprite.h(17): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponsprite.h(16): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+d:\game captain america and the avengers\game_se102.j31\game_se102.j31\weaponshield.h(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Generating Code...
-Enemy.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl Enemy::~Enemy(void)" (??1Enemy@@UEAA@XZ) referenced in function "public: virtual void * __cdecl Enemy::`scalar deleting destructor'(unsigned int)" (??_GEnemy@@UEAAPEAXI@Z)
-EnemyBlueSoldier.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl Enemy::~Enemy(void)" (??1Enemy@@UEAA@XZ)
-EnemyBlueSoldier.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl EnemyBlueSoldier::~EnemyBlueSoldier(void)" (??1EnemyBlueSoldier@@UEAA@XZ) referenced in function "public: virtual void * __cdecl EnemyBlueSoldier::`scalar deleting destructor'(unsigned int)" (??_GEnemyBlueSoldier@@UEAAPEAXI@Z)
-PlayScene.obj : error LNK2019: unresolved external symbol "public: void __cdecl Enemy::Update(float)" (?Update@Enemy@@QEAAXM@Z) referenced in function "public: void __cdecl PlayScene::UpdatePlayer(float)" (?UpdatePlayer@PlayScene@@QEAAXM@Z)
-E:\Bai tap\Nam 2\Gameeee\New folder\Load Bitmap\Load Bitmap\Debug\Load Bitmap.tlog\UITGAME_SE102.J312\Game_SE102.J31\x64\Debug\Game_SE102.J31.exe : fatal error LNK1120: 3 unresolved externals
+  Game_SE102.J31.vcxproj -> D:\Game Captain America and The Avengers\Game_SE102.J31\x64\Debug\Game_SE102.J31.exe

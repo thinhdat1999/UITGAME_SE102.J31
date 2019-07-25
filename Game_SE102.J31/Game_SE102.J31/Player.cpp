@@ -11,7 +11,7 @@ Player::Player()
 	animations[FALLING] = new Animation(PLAYER, 7);
 	animations[SPINNING] = new Animation(PLAYER, 8, 9, DEFAULT_TPF >> 1);
 	animations[ATTACKING_JUMP] = new Animation(PLAYER, 10);
-	animations[THROWING] = new Animation(PLAYER, 11, 12, DEFAULT_TPF );
+	animations[THROWING] = new Animation(PLAYER, 11, 12, DEFAULT_TPF);
 	animations[ATTACKING_STAND] = new Animation(PLAYER, 13, 14, DEFAULT_TPF);
 	animations[ATTACKING_SIT] = new Animation(PLAYER, 15, 16, DEFAULT_TPF);
 	animations[DASHING] = new Animation(PLAYER, 17, 18, DEFAULT_TPF);
